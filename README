@@ -11,3 +11,9 @@ This is an open source project to provide push notification support for Android
 
 androidpn-0.5.0 版本
 14:46 2012/4/13
+
+文件描述：
+androidpn-client：android客户端工程源码包
+androidpn-demoapp：android客户端工程调用封装好的.jar包
+androidpn-server-bin：androidpn服务器端jetty版本
+androidpn-server-src：androidpn服务器端源码包
