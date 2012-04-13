@@ -23,6 +23,12 @@ dannytiehui@hotmail.com
 
 =======v0.6.0更新后16:36 2012/4/13================
 
+此开源项目包含三个部分：
+1、Android客户端示例
+2、消息推送服务器端示例（源码、jetty版本、tomcat版本）
+3、项目可以直接引用的中间件
+
+
 文件描述：
 androidpn-client：android客户端工程源码包
 androidpn-server-src：androidpn服务器端源码包
@@ -65,7 +71,7 @@ WebRoot/WEB-INF/dispatcher-servlet.xml文件更新
 /user_api.do=userapiController	
 /notification_api.do=notificationapiController
 
-为防止别人恶意用网页群发消息推送，一下可隐藏		
+为防止别人恶意用网页群发消息推送，以下可隐藏		
 /index.do=filenameController
 /user.do=userController
 /session.do=sessionController
