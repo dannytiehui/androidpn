@@ -1,0 +1,917 @@
+{DEBUG} [2012-04-13 16:12:54,621] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2012-04-13 16:12:55,219] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.xml
+{DEBUG} [2012-04-13 16:12:55,318] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2012-04-13 16:12:56,048] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.properties
+{DEBUG} [2012-04-13 16:12:56,051] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2012-04-13 16:12:56,209] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2012-04-13 16:12:56,225] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty
+{INFO } [2012-04-13 16:12:56,599] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2acc65: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2acc65]; startup date [Fri Apr 13 16:12:56 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:12:57,249] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [spring-config.xml]
+{INFO } [2012-04-13 16:12:58,538] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2acc65]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b02928
+{INFO } [2012-04-13 16:12:59,003] <org.springframework.beans.factory.config.PropertyPlaceholderConfigurer> : Loading properties file from class path resource [jdbc.properties]
+{INFO } [2012-04-13 16:12:59,175] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b02928: defining beans [propertyConfigurer,dataSource,sessionFactory,transactionManager,userDao,userService,org.springframework.beans.factory.config.CustomEditorConfigurer#0,xmppHandler,filterChainBuilder,ioAcceptor]; root of factory hierarchy
+{INFO } [2012-04-13 16:12:59,863] <org.hibernate.cfg.annotations.Version> : Hibernate Annotations 3.4.0.GA
+{INFO } [2012-04-13 16:13:00,002] <org.hibernate.cfg.Environment> : Hibernate 3.3.1.GA
+{INFO } [2012-04-13 16:13:00,017] <org.hibernate.cfg.Environment> : hibernate.properties not found
+{INFO } [2012-04-13 16:13:00,059] <org.hibernate.cfg.Environment> : Bytecode provider name : javassist
+{INFO } [2012-04-13 16:13:00,077] <org.hibernate.cfg.Environment> : using JDK 1.4 java.sql.Timestamp handling
+{INFO } [2012-04-13 16:13:00,363] <org.hibernate.annotations.common.Version> : Hibernate Commons Annotations 3.1.0.GA
+{INFO } [2012-04-13 16:13:00,490] <org.hibernate.cfg.Configuration> : configuring from url: file:/C:/Users/LuTH/Desktop/androidpn/androidpn-server-bin-jetty/conf/hibernate.cfg.xml
+{INFO } [2012-04-13 16:13:01,029] <org.hibernate.cfg.Configuration> : Configured SessionFactory: null
+{INFO } [2012-04-13 16:13:01,311] <org.hibernate.cfg.AnnotationBinder> : Binding entity from annotated class: org.androidpn.server.model.User
+{INFO } [2012-04-13 16:13:01,447] <org.hibernate.cfg.annotations.EntityBinder> : Bind entity org.androidpn.server.model.User on table apn_user
+{INFO } [2012-04-13 16:13:01,644] <org.hibernate.cfg.AnnotationConfiguration> : Hibernate Validator not found: ignoring
+{INFO } [2012-04-13 16:13:01,645] <org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean> : Building new Hibernate SessionFactory
+{INFO } [2012-04-13 16:13:01,657] <org.hibernate.cfg.search.HibernateSearchEventListenerRegister> : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+{INFO } [2012-04-13 16:13:02,077] <org.hibernate.connection.ConnectionProviderFactory> : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+{INFO } [2012-04-13 16:13:04,258] <org.hibernate.cfg.SettingsFactory> : RDBMS: HSQL Database Engine, version: 1.8.0
+{INFO } [2012-04-13 16:13:04,260] <org.hibernate.cfg.SettingsFactory> : JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+{INFO } [2012-04-13 16:13:04,327] <org.hibernate.dialect.Dialect> : Using dialect: org.hibernate.dialect.HSQLDialect
+{INFO } [2012-04-13 16:13:04,340] <org.hibernate.transaction.TransactionFactoryFactory> : Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+{INFO } [2012-04-13 16:13:04,344] <org.hibernate.transaction.TransactionManagerLookupFactory> : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+{INFO } [2012-04-13 16:13:04,346] <org.hibernate.cfg.SettingsFactory> : Automatic flush during beforeCompletion(): disabled
+{INFO } [2012-04-13 16:13:04,348] <org.hibernate.cfg.SettingsFactory> : Automatic session close at end of transaction: disabled
+{INFO } [2012-04-13 16:13:04,350] <org.hibernate.cfg.SettingsFactory> : JDBC batch size: 15
+{INFO } [2012-04-13 16:13:04,352] <org.hibernate.cfg.SettingsFactory> : JDBC batch updates for versioned data: disabled
+{INFO } [2012-04-13 16:13:04,365] <org.hibernate.cfg.SettingsFactory> : Scrollable result sets: enabled
+{INFO } [2012-04-13 16:13:04,368] <org.hibernate.cfg.SettingsFactory> : JDBC3 getGeneratedKeys(): disabled
+{INFO } [2012-04-13 16:13:04,369] <org.hibernate.cfg.SettingsFactory> : Connection release mode: auto
+{INFO } [2012-04-13 16:13:04,373] <org.hibernate.cfg.SettingsFactory> : Default batch fetch size: 1
+{INFO } [2012-04-13 16:13:04,374] <org.hibernate.cfg.SettingsFactory> : Generate SQL with comments: enabled
+{INFO } [2012-04-13 16:13:04,376] <org.hibernate.cfg.SettingsFactory> : Order SQL updates by primary key: disabled
+{INFO } [2012-04-13 16:13:04,378] <org.hibernate.cfg.SettingsFactory> : Order SQL inserts for batching: disabled
+{INFO } [2012-04-13 16:13:04,380] <org.hibernate.cfg.SettingsFactory> : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:13:04,388] <org.hibernate.hql.ast.ASTQueryTranslatorFactory> : Using ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:13:04,389] <org.hibernate.cfg.SettingsFactory> : Query language substitutions: {}
+{INFO } [2012-04-13 16:13:04,391] <org.hibernate.cfg.SettingsFactory> : JPA-QL strict compliance: disabled
+{INFO } [2012-04-13 16:13:04,393] <org.hibernate.cfg.SettingsFactory> : Second-level cache: enabled
+{INFO } [2012-04-13 16:13:04,395] <org.hibernate.cfg.SettingsFactory> : Query cache: disabled
+{INFO } [2012-04-13 16:13:04,408] <org.hibernate.cfg.SettingsFactory> : Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+{INFO } [2012-04-13 16:13:04,410] <org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> : Cache provider: net.sf.ehcache.hibernate.EhCacheProvider
+{INFO } [2012-04-13 16:13:04,439] <org.hibernate.cfg.SettingsFactory> : Optimize cache for minimal puts: disabled
+{INFO } [2012-04-13 16:13:04,440] <org.hibernate.cfg.SettingsFactory> : Structured second-level cache entries: disabled
+{INFO } [2012-04-13 16:13:04,457] <org.hibernate.cfg.SettingsFactory> : Statistics: disabled
+{INFO } [2012-04-13 16:13:04,458] <org.hibernate.cfg.SettingsFactory> : Deleted entity synthetic identifier rollback: disabled
+{INFO } [2012-04-13 16:13:04,463] <org.hibernate.cfg.SettingsFactory> : Default entity-mode: pojo
+{INFO } [2012-04-13 16:13:04,464] <org.hibernate.cfg.SettingsFactory> : Named query checking : enabled
+{INFO } [2012-04-13 16:13:04,886] <org.hibernate.impl.SessionFactoryImpl> : building session factory
+{INFO } [2012-04-13 16:13:06,312] <org.hibernate.impl.SessionFactoryObjectFactory> : Not binding factory to JNDI, no JNDI name configured
+{INFO } [2012-04-13 16:13:06,336] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : Running hbm2ddl schema update
+{INFO } [2012-04-13 16:13:06,338] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : fetching database metadata
+{INFO } [2012-04-13 16:13:06,447] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : updating schema
+{INFO } [2012-04-13 16:13:06,557] <org.hibernate.tool.hbm2ddl.DatabaseMetadata> : table not found: apn_user
+{INFO } [2012-04-13 16:13:06,568] <org.hibernate.tool.hbm2ddl.DatabaseMetadata> : table not found: apn_user
+{INFO } [2012-04-13 16:13:06,603] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : schema update complete
+{INFO } [2012-04-13 16:13:07,132] <org.springframework.orm.hibernate3.HibernateTransactionManager> : Using DataSource [org.apache.commons.dbcp.BasicDataSource@1add463] of Hibernate SessionFactory for HibernateTransactionManager
+{DEBUG} [2012-04-13 16:13:07,909] <org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder> : LinkedHashMap is an ordered map.
+{INFO } [2012-04-13 16:13:08,412] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2012-04-13 16:13:08,850] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2012-04-13 16:13:08,868] <org.mortbay.log> : jetty-6.1.25
+{INFO } [2012-04-13 16:13:10,311] </> : Initializing Spring root WebApplicationContext
+{INFO } [2012-04-13 16:13:10,313] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization started
+{INFO } [2012-04-13 16:13:10,346] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1d592a: display name [Root WebApplicationContext]; startup date [Fri Apr 13 16:13:10 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:13:10,363] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+{INFO } [2012-04-13 16:13:10,436] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1d592a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1a02097
+{INFO } [2012-04-13 16:13:10,463] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a02097: defining beans []; root of factory hierarchy
+{INFO } [2012-04-13 16:13:10,464] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization completed in 145 ms
+{INFO } [2012-04-13 16:13:10,816] </> : Initializing Spring FrameworkServlet 'dispatcher'
+{INFO } [2012-04-13 16:13:10,822] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization started
+{INFO } [2012-04-13 16:13:10,828] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@539f0d: display name [WebApplicationContext for namespace 'dispatcher-servlet']; startup date [Fri Apr 13 16:13:10 CST 2012]; parent: org.springframework.web.context.support.XmlWebApplicationContext@1d592a
+{INFO } [2012-04-13 16:13:10,841] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+{INFO } [2012-04-13 16:13:10,964] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@539f0d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@842d9a
+{INFO } [2012-04-13 16:13:11,142] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@842d9a: defining beans [urlMapping,userapiController,notificationapiController,filenameController,userController,sessionController,notificationController,paramResolver,viewResolver,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1a02097
+{DEBUG} [2012-04-13 16:13:11,219] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.api.NotificationApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,221] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public void org.androidpn.server.console.api.NotificationApiController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,298] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,300] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,323] <org.androidpn.server.console.controller.UserController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.UserController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,348] <org.androidpn.server.console.api.UserApiController> : Found action method [public void org.androidpn.server.console.api.UserApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:13:11,375] <org.androidpn.server.console.controller.SessionController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.SessionController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{INFO } [2012-04-13 16:13:11,632] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization completed in 806 ms
+{INFO } [2012-04-13 16:13:11,752] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2012-04-13 16:13:11,755] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2012-04-13 16:13:11,769] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2012-04-13 16:13:11,772] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2012-04-13 16:13:11,774] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2012-04-13 16:17:18,612] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2012-04-13 16:17:18,682] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.xml
+{DEBUG} [2012-04-13 16:17:18,693] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2012-04-13 16:17:18,941] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.properties
+{DEBUG} [2012-04-13 16:17:18,944] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2012-04-13 16:17:18,974] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2012-04-13 16:17:18,976] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty
+{INFO } [2012-04-13 16:17:19,081] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@164dbd5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@164dbd5]; startup date [Fri Apr 13 16:17:19 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:17:19,217] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [spring-config.xml]
+{INFO } [2012-04-13 16:17:19,785] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@164dbd5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1724a9d
+{INFO } [2012-04-13 16:17:19,912] <org.springframework.beans.factory.config.PropertyPlaceholderConfigurer> : Loading properties file from class path resource [jdbc.properties]
+{INFO } [2012-04-13 16:17:19,945] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1724a9d: defining beans [propertyConfigurer,dataSource,sessionFactory,transactionManager,userDao,userService,org.springframework.beans.factory.config.CustomEditorConfigurer#0,xmppHandler,filterChainBuilder,ioAcceptor]; root of factory hierarchy
+{INFO } [2012-04-13 16:17:20,099] <org.hibernate.cfg.annotations.Version> : Hibernate Annotations 3.4.0.GA
+{INFO } [2012-04-13 16:17:20,119] <org.hibernate.cfg.Environment> : Hibernate 3.3.1.GA
+{INFO } [2012-04-13 16:17:20,125] <org.hibernate.cfg.Environment> : hibernate.properties not found
+{INFO } [2012-04-13 16:17:20,132] <org.hibernate.cfg.Environment> : Bytecode provider name : javassist
+{INFO } [2012-04-13 16:17:20,139] <org.hibernate.cfg.Environment> : using JDK 1.4 java.sql.Timestamp handling
+{INFO } [2012-04-13 16:17:20,245] <org.hibernate.annotations.common.Version> : Hibernate Commons Annotations 3.1.0.GA
+{INFO } [2012-04-13 16:17:20,256] <org.hibernate.cfg.Configuration> : configuring from url: file:/C:/Users/LuTH/Desktop/androidpn/androidpn-server-bin-jetty/conf/hibernate.cfg.xml
+{INFO } [2012-04-13 16:17:20,483] <org.hibernate.cfg.Configuration> : Configured SessionFactory: null
+{INFO } [2012-04-13 16:17:20,569] <org.hibernate.cfg.AnnotationBinder> : Binding entity from annotated class: org.androidpn.server.model.User
+{INFO } [2012-04-13 16:17:20,623] <org.hibernate.cfg.annotations.EntityBinder> : Bind entity org.androidpn.server.model.User on table apn_user
+{INFO } [2012-04-13 16:17:20,702] <org.hibernate.cfg.AnnotationConfiguration> : Hibernate Validator not found: ignoring
+{INFO } [2012-04-13 16:17:20,702] <org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean> : Building new Hibernate SessionFactory
+{INFO } [2012-04-13 16:17:20,708] <org.hibernate.cfg.search.HibernateSearchEventListenerRegister> : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+{INFO } [2012-04-13 16:17:20,784] <org.hibernate.connection.ConnectionProviderFactory> : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+{INFO } [2012-04-13 16:17:21,641] <org.hibernate.cfg.SettingsFactory> : RDBMS: HSQL Database Engine, version: 1.8.0
+{INFO } [2012-04-13 16:17:21,642] <org.hibernate.cfg.SettingsFactory> : JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+{INFO } [2012-04-13 16:17:21,685] <org.hibernate.dialect.Dialect> : Using dialect: org.hibernate.dialect.HSQLDialect
+{INFO } [2012-04-13 16:17:21,698] <org.hibernate.transaction.TransactionFactoryFactory> : Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+{INFO } [2012-04-13 16:17:21,702] <org.hibernate.transaction.TransactionManagerLookupFactory> : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+{INFO } [2012-04-13 16:17:21,703] <org.hibernate.cfg.SettingsFactory> : Automatic flush during beforeCompletion(): disabled
+{INFO } [2012-04-13 16:17:21,705] <org.hibernate.cfg.SettingsFactory> : Automatic session close at end of transaction: disabled
+{INFO } [2012-04-13 16:17:21,707] <org.hibernate.cfg.SettingsFactory> : JDBC batch size: 15
+{INFO } [2012-04-13 16:17:21,709] <org.hibernate.cfg.SettingsFactory> : JDBC batch updates for versioned data: disabled
+{INFO } [2012-04-13 16:17:21,715] <org.hibernate.cfg.SettingsFactory> : Scrollable result sets: enabled
+{INFO } [2012-04-13 16:17:21,716] <org.hibernate.cfg.SettingsFactory> : JDBC3 getGeneratedKeys(): disabled
+{INFO } [2012-04-13 16:17:21,718] <org.hibernate.cfg.SettingsFactory> : Connection release mode: auto
+{INFO } [2012-04-13 16:17:21,722] <org.hibernate.cfg.SettingsFactory> : Default batch fetch size: 1
+{INFO } [2012-04-13 16:17:21,723] <org.hibernate.cfg.SettingsFactory> : Generate SQL with comments: enabled
+{INFO } [2012-04-13 16:17:21,728] <org.hibernate.cfg.SettingsFactory> : Order SQL updates by primary key: disabled
+{INFO } [2012-04-13 16:17:21,731] <org.hibernate.cfg.SettingsFactory> : Order SQL inserts for batching: disabled
+{INFO } [2012-04-13 16:17:21,733] <org.hibernate.cfg.SettingsFactory> : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:17:21,741] <org.hibernate.hql.ast.ASTQueryTranslatorFactory> : Using ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:17:21,742] <org.hibernate.cfg.SettingsFactory> : Query language substitutions: {}
+{INFO } [2012-04-13 16:17:21,744] <org.hibernate.cfg.SettingsFactory> : JPA-QL strict compliance: disabled
+{INFO } [2012-04-13 16:17:21,748] <org.hibernate.cfg.SettingsFactory> : Second-level cache: enabled
+{INFO } [2012-04-13 16:17:21,749] <org.hibernate.cfg.SettingsFactory> : Query cache: disabled
+{INFO } [2012-04-13 16:17:21,763] <org.hibernate.cfg.SettingsFactory> : Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+{INFO } [2012-04-13 16:17:21,765] <org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> : Cache provider: net.sf.ehcache.hibernate.EhCacheProvider
+{INFO } [2012-04-13 16:17:21,775] <org.hibernate.cfg.SettingsFactory> : Optimize cache for minimal puts: disabled
+{INFO } [2012-04-13 16:17:21,776] <org.hibernate.cfg.SettingsFactory> : Structured second-level cache entries: disabled
+{INFO } [2012-04-13 16:17:21,797] <org.hibernate.cfg.SettingsFactory> : Statistics: disabled
+{INFO } [2012-04-13 16:17:21,798] <org.hibernate.cfg.SettingsFactory> : Deleted entity synthetic identifier rollback: disabled
+{INFO } [2012-04-13 16:17:21,803] <org.hibernate.cfg.SettingsFactory> : Default entity-mode: pojo
+{INFO } [2012-04-13 16:17:21,803] <org.hibernate.cfg.SettingsFactory> : Named query checking : enabled
+{INFO } [2012-04-13 16:17:21,943] <org.hibernate.impl.SessionFactoryImpl> : building session factory
+{INFO } [2012-04-13 16:17:22,780] <org.hibernate.impl.SessionFactoryObjectFactory> : Not binding factory to JNDI, no JNDI name configured
+{INFO } [2012-04-13 16:17:22,797] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : Running hbm2ddl schema update
+{INFO } [2012-04-13 16:17:22,798] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : fetching database metadata
+{INFO } [2012-04-13 16:17:22,824] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : updating schema
+{INFO } [2012-04-13 16:17:22,942] <org.hibernate.tool.hbm2ddl.TableMetadata> : table found: PUBLIC.APN_USER
+{INFO } [2012-04-13 16:17:22,943] <org.hibernate.tool.hbm2ddl.TableMetadata> : columns: [created_date, id, username, updated_date, email, name, password]
+{INFO } [2012-04-13 16:17:22,947] <org.hibernate.tool.hbm2ddl.TableMetadata> : foreign keys: []
+{INFO } [2012-04-13 16:17:22,949] <org.hibernate.tool.hbm2ddl.TableMetadata> : indexes: [sys_idx_sys_ct_46_49, sys_idx_47]
+{INFO } [2012-04-13 16:17:22,951] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : schema update complete
+{INFO } [2012-04-13 16:17:23,044] <org.springframework.orm.hibernate3.HibernateTransactionManager> : Using DataSource [org.apache.commons.dbcp.BasicDataSource@cec78d] of Hibernate SessionFactory for HibernateTransactionManager
+{DEBUG} [2012-04-13 16:17:23,301] <org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder> : LinkedHashMap is an ordered map.
+{INFO } [2012-04-13 16:17:23,490] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2012-04-13 16:17:23,757] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2012-04-13 16:17:23,777] <org.mortbay.log> : jetty-6.1.25
+{INFO } [2012-04-13 16:17:24,777] </> : Initializing Spring root WebApplicationContext
+{INFO } [2012-04-13 16:17:24,781] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization started
+{INFO } [2012-04-13 16:17:24,794] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@171120a: display name [Root WebApplicationContext]; startup date [Fri Apr 13 16:17:24 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:17:24,807] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+{INFO } [2012-04-13 16:17:24,898] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@171120a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1a1bc40
+{INFO } [2012-04-13 16:17:24,928] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a1bc40: defining beans []; root of factory hierarchy
+{INFO } [2012-04-13 16:17:24,931] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization completed in 148 ms
+{INFO } [2012-04-13 16:17:25,125] </> : Initializing Spring FrameworkServlet 'dispatcher'
+{INFO } [2012-04-13 16:17:25,126] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization started
+{INFO } [2012-04-13 16:17:25,138] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@86d1da: display name [WebApplicationContext for namespace 'dispatcher-servlet']; startup date [Fri Apr 13 16:17:25 CST 2012]; parent: org.springframework.web.context.support.XmlWebApplicationContext@171120a
+{INFO } [2012-04-13 16:17:25,140] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+{INFO } [2012-04-13 16:17:25,199] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@86d1da]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1ac13d7
+{INFO } [2012-04-13 16:17:25,251] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ac13d7: defining beans [urlMapping,userapiController,notificationapiController,filenameController,userController,sessionController,notificationController,paramResolver,viewResolver,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1a1bc40
+{DEBUG} [2012-04-13 16:17:25,291] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.api.NotificationApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,292] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public void org.androidpn.server.console.api.NotificationApiController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,327] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,328] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,346] <org.androidpn.server.console.controller.UserController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.UserController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,366] <org.androidpn.server.console.api.UserApiController> : Found action method [public void org.androidpn.server.console.api.UserApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:17:25,412] <org.androidpn.server.console.controller.SessionController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.SessionController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{INFO } [2012-04-13 16:17:25,490] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization completed in 355 ms
+{INFO } [2012-04-13 16:17:25,509] <org.mortbay.log> : Started SelectChannelConnector@10.62.1.226:7070
+{DEBUG} [2012-04-13 16:17:25,510] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2012-04-13 16:17:25,512] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://10.62.1.226:7070
+{INFO } [2012-04-13 16:17:25,517] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2012-04-13 16:17:25,520] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2012-04-13 16:28:33,787] <org.androidpn.server.xmpp.net.XmppIoHandler> : sessionCreated()...
+{DEBUG} [2012-04-13 16:28:33,824] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event SESSION_OPENED to session 2
+Queue : [SESSION_OPENED, ]
+
+{DEBUG} [2012-04-13 16:28:33,829] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a SESSION_OPENED event for session 2
+{DEBUG} [2012-04-13 16:28:33,832] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:33,832] <org.androidpn.server.xmpp.net.XmppIoHandler> : sessionOpened()...
+{DEBUG} [2012-04-13 16:28:33,835] <org.androidpn.server.xmpp.net.XmppIoHandler> : remoteAddress=/10.62.2.241:41766
+{DEBUG} [2012-04-13 16:28:34,056] <org.apache.mina.core.filterchain.IoFilterEvent> : Event SESSION_OPENED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:34,057] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:34,059] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:34,073] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:34,073] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <stream:stream to="10.62.1.226" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2012-04-13 16:28:34,085] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2012-04-13 16:28:34,110] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2012-04-13 16:28:34,111] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="18ba9b2d" xml:lang="en" version="1.0">
+{DEBUG} [2012-04-13 16:28:34,126] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2012-04-13 16:28:34,128] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:34,131] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:34,132] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:34,132] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:34,140] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:34,144] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:34,144] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:34,145] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:34,145] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:34,145] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:34,146] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:34,146] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:34,148] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:34,149] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+{DEBUG} [2012-04-13 16:28:34,151] <org.androidpn.server.xmpp.net.Connection> : startTLS()...
+{DEBUG} [2012-04-13 16:28:34,161] <org.androidpn.server.xmpp.ssl.SSLConfig> : keyStoreLocation=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\conf/security/keystore
+{DEBUG} [2012-04-13 16:28:34,162] <org.androidpn.server.xmpp.ssl.SSLConfig> : trustStoreLocation=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\conf/security/truststore
+{DEBUG} [2012-04-13 16:28:35,761] <org.androidpn.server.xmpp.net.Connection> : SENT: <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+{DEBUG} [2012-04-13 16:28:35,762] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,245] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:36,248] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:36,248] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:36,249] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:36,250] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <stream:stream to="127.0.0.1" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2012-04-13 16:28:36,250] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="18ba9b2d" xml:lang="en" version="1.0"><stream:features><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2012-04-13 16:28:36,276] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,277] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:36,279] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:36,280] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:36,280] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,324] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:36,325] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:36,325] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:36,326] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:36,326] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-6" type="get"><query xmlns="jabber:iq:auth"><username>4b6b7880438d4c2a80cebea233948e71</username></query></iq>
+{DEBUG} [2012-04-13 16:28:36,328] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:36,328] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:28:36,397] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-6"><query xmlns="jabber:iq:auth"><username>4b6b7880438d4c2a80cebea233948e71</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2012-04-13 16:28:36,441] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,441] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:36,443] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:36,445] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:36,446] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,454] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:36,460] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:36,461] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:36,503] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:36,510] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-7" type="set"><query xmlns="jabber:iq:auth"><username>4b6b7880438d4c2a80cebea233948e71</username><digest>883a1af81f85bc37b677b41ad9ffdc14b64eb9d8</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2012-04-13 16:28:36,526] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:36,528] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{ERROR} [2012-04-13 16:28:36,759] <org.androidpn.server.xmpp.handler.IQAuthHandler> : org.androidpn.server.xmpp.UnauthenticatedException
+{DEBUG} [2012-04-13 16:28:36,789] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="error" id="R7RDX-7" to="127.0.0.1/18ba9b2d"><query xmlns="jabber:iq:auth"><username>4b6b7880438d4c2a80cebea233948e71</username><digest>883a1af81f85bc37b677b41ad9ffdc14b64eb9d8</digest><resource>AndroidpnClient</resource></query><error code="401" type="auth"><not-authorized xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/></error></iq>
+{DEBUG} [2012-04-13 16:28:36,793] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,793] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:36,794] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:36,794] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:36,795] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:36,905] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:36,906] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:36,907] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:36,907] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:36,908] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-8" type="set"><query xmlns="jabber:iq:register"><password>d9fdfe931f104e61887656a49ca9b0e4</password><username>82e4c4dffc394761b1af1230803969ed</username></query></iq>
+{DEBUG} [2012-04-13 16:28:36,909] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:36,910] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:28:37,102] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-8" to="127.0.0.1/18ba9b2d"/>
+{DEBUG} [2012-04-13 16:28:37,103] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,104] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:37,104] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:37,105] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:37,106] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,209] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:37,210] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:37,210] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:37,211] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:37,212] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-9" type="get"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username></query></iq>
+{DEBUG} [2012-04-13 16:28:37,213] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:37,214] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:28:37,215] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-9"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2012-04-13 16:28:37,217] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,218] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:37,219] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:37,220] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:37,220] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,230] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:37,231] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:37,232] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:37,232] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:37,233] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-10" type="set"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username><digest>ae21780df3b63f058b5882733a2ae06eb8a8c296</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2012-04-13 16:28:37,234] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:37,234] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:28:37,341] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-10" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2012-04-13 16:28:37,343] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,344] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:37,345] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:37,346] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:37,346] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,370] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:37,371] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:37,371] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:37,372] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:37,372] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-11" type="get"><query xmlns="jabber:iq:roster" ></query></iq>
+{DEBUG} [2012-04-13 16:28:37,373] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:28:37,374] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:28:37,376] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:37,569] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:28:37,574] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:28:37,575] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:28:37,575] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:28:37,576] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <presence id="R7RDX-12"></presence>
+{DEBUG} [2012-04-13 16:28:37,577] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2012-04-13 16:28:37,577] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2012-04-13 16:28:37,582] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:28:48,084] <org.androidpn.server.console.controller.NotificationController> : apiKey=1234567890
+{DEBUG} [2012-04-13 16:28:48,086] <org.androidpn.server.xmpp.push.NotificationManager> : sendBroadcast()...
+{DEBUG} [2012-04-13 16:28:48,087] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="set" id="272-0" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"><notification xmlns="androidpn:iq:notification"><id>6b7f1601</id><apiKey>1234567890</apiKey><title>中文</title><message>Dokdo is a Korean island, the far east of the Korean territory. No doubt! No question! Don't mention it any more!</message><uri></uri></notification></iq>
+{DEBUG} [2012-04-13 16:28:48,091] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:28:48,092] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:28:48,093] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:28:48,094] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:29:21,333] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:29:21,335] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:29:21,335] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:29:21,336] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:29:44,935] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception class [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:29:44,936] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:29:44,938] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.IncompatibleClassChangeError]
+{DEBUG} [2012-04-13 16:29:44,944] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.LinkageError]
+{DEBUG} [2012-04-13 16:29:44,946] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.Error]
+{ERROR} [2012-04-13 16:29:44,990] <org.mortbay.log> : /user_api.do
+java.lang.NoSuchMethodError: org.androidpn.server.service.UserService.getUsersFromCreatedDate(Ljava/util/Date;)Ljava/util/List;
+	at org.androidpn.server.console.api.UserApiController.list(UserApiController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.invokeNamedMethod(MultiActionController.java:473)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.handleRequestInternal(MultiActionController.java:410)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:875)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:807)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:571)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:501)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:440)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:926)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+{DEBUG} [2012-04-13 16:29:48,559] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception class [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:29:48,560] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:29:48,561] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.IncompatibleClassChangeError]
+{DEBUG} [2012-04-13 16:29:48,561] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.LinkageError]
+{DEBUG} [2012-04-13 16:29:48,562] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.Error]
+{ERROR} [2012-04-13 16:29:48,563] <org.mortbay.log> : /user_api.do
+java.lang.NoSuchMethodError: org.androidpn.server.service.UserService.getUsersFromCreatedDate(Ljava/util/Date;)Ljava/util/List;
+	at org.androidpn.server.console.api.UserApiController.list(UserApiController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.invokeNamedMethod(MultiActionController.java:473)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.handleRequestInternal(MultiActionController.java:410)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:875)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:807)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:571)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:501)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:440)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:926)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+{DEBUG} [2012-04-13 16:29:51,332] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:29:51,333] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:29:51,334] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:29:51,335] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:30:21,331] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:30:21,332] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:30:21,332] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:30:21,333] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:30:51,340] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:30:51,342] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:30:51,343] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:30:51,343] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:31:21,327] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:31:21,328] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:31:21,329] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:31:21,329] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:31:43,929] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception class [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:31:43,930] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.NoSuchMethodError]
+{DEBUG} [2012-04-13 16:31:43,931] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.IncompatibleClassChangeError]
+{DEBUG} [2012-04-13 16:31:43,931] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.LinkageError]
+{DEBUG} [2012-04-13 16:31:43,931] <org.androidpn.server.console.api.UserApiController> : Trying to find handler for exception superclass [java.lang.Error]
+{ERROR} [2012-04-13 16:31:43,935] <org.mortbay.log> : /user_api.do
+java.lang.NoSuchMethodError: org.androidpn.server.service.UserService.getUsersFromCreatedDate(Ljava/util/Date;)Ljava/util/List;
+	at org.androidpn.server.console.api.UserApiController.list(UserApiController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.invokeNamedMethod(MultiActionController.java:473)
+	at org.springframework.web.servlet.mvc.multiaction.MultiActionController.handleRequestInternal(MultiActionController.java:410)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:153)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:875)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:807)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:571)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:501)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1166)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:388)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:440)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:926)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+{DEBUG} [2012-04-13 16:31:51,341] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:31:51,344] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:31:51,344] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:31:51,345] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:32:21,328] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:32:21,329] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:32:21,331] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:32:21,331] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:32:57,159] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2012-04-13 16:32:57,342] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.xml
+{DEBUG} [2012-04-13 16:32:57,380] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2012-04-13 16:32:57,817] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\bin, name is config.properties
+{DEBUG} [2012-04-13 16:32:57,822] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2012-04-13 16:32:57,902] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2012-04-13 16:32:57,905] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty
+{INFO } [2012-04-13 16:32:58,154] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9cb0f4: display name [org.springframework.context.support.ClassPathXmlApplicationContext@9cb0f4]; startup date [Fri Apr 13 16:32:58 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:32:58,414] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [spring-config.xml]
+{INFO } [2012-04-13 16:32:59,434] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@9cb0f4]: org.springframework.beans.factory.support.DefaultListableBeanFactory@18166e5
+{INFO } [2012-04-13 16:32:59,849] <org.springframework.beans.factory.config.PropertyPlaceholderConfigurer> : Loading properties file from class path resource [jdbc.properties]
+{INFO } [2012-04-13 16:32:59,960] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18166e5: defining beans [propertyConfigurer,dataSource,sessionFactory,transactionManager,userDao,userService,org.springframework.beans.factory.config.CustomEditorConfigurer#0,xmppHandler,filterChainBuilder,ioAcceptor]; root of factory hierarchy
+{INFO } [2012-04-13 16:33:00,486] <org.hibernate.cfg.annotations.Version> : Hibernate Annotations 3.4.0.GA
+{INFO } [2012-04-13 16:33:00,544] <org.hibernate.cfg.Environment> : Hibernate 3.3.1.GA
+{INFO } [2012-04-13 16:33:00,555] <org.hibernate.cfg.Environment> : hibernate.properties not found
+{INFO } [2012-04-13 16:33:00,579] <org.hibernate.cfg.Environment> : Bytecode provider name : javassist
+{INFO } [2012-04-13 16:33:00,591] <org.hibernate.cfg.Environment> : using JDK 1.4 java.sql.Timestamp handling
+{INFO } [2012-04-13 16:33:00,779] <org.hibernate.annotations.common.Version> : Hibernate Commons Annotations 3.1.0.GA
+{INFO } [2012-04-13 16:33:00,819] <org.hibernate.cfg.Configuration> : configuring from url: file:/C:/Users/LuTH/Desktop/androidpn/androidpn-server-bin-jetty/conf/hibernate.cfg.xml
+{INFO } [2012-04-13 16:33:01,121] <org.hibernate.cfg.Configuration> : Configured SessionFactory: null
+{INFO } [2012-04-13 16:33:01,332] <org.hibernate.cfg.AnnotationBinder> : Binding entity from annotated class: org.androidpn.server.model.User
+{INFO } [2012-04-13 16:33:01,437] <org.hibernate.cfg.annotations.EntityBinder> : Bind entity org.androidpn.server.model.User on table apn_user
+{INFO } [2012-04-13 16:33:01,588] <org.hibernate.cfg.AnnotationConfiguration> : Hibernate Validator not found: ignoring
+{INFO } [2012-04-13 16:33:01,589] <org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean> : Building new Hibernate SessionFactory
+{INFO } [2012-04-13 16:33:01,599] <org.hibernate.cfg.search.HibernateSearchEventListenerRegister> : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+{INFO } [2012-04-13 16:33:01,806] <org.hibernate.connection.ConnectionProviderFactory> : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+{INFO } [2012-04-13 16:33:03,066] <org.hibernate.cfg.SettingsFactory> : RDBMS: HSQL Database Engine, version: 1.8.0
+{INFO } [2012-04-13 16:33:03,069] <org.hibernate.cfg.SettingsFactory> : JDBC driver: HSQL Database Engine Driver, version: 1.8.0
+{INFO } [2012-04-13 16:33:03,148] <org.hibernate.dialect.Dialect> : Using dialect: org.hibernate.dialect.HSQLDialect
+{INFO } [2012-04-13 16:33:03,162] <org.hibernate.transaction.TransactionFactoryFactory> : Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+{INFO } [2012-04-13 16:33:03,166] <org.hibernate.transaction.TransactionManagerLookupFactory> : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+{INFO } [2012-04-13 16:33:03,168] <org.hibernate.cfg.SettingsFactory> : Automatic flush during beforeCompletion(): disabled
+{INFO } [2012-04-13 16:33:03,170] <org.hibernate.cfg.SettingsFactory> : Automatic session close at end of transaction: disabled
+{INFO } [2012-04-13 16:33:03,174] <org.hibernate.cfg.SettingsFactory> : JDBC batch size: 15
+{INFO } [2012-04-13 16:33:03,183] <org.hibernate.cfg.SettingsFactory> : JDBC batch updates for versioned data: disabled
+{INFO } [2012-04-13 16:33:03,189] <org.hibernate.cfg.SettingsFactory> : Scrollable result sets: enabled
+{INFO } [2012-04-13 16:33:03,190] <org.hibernate.cfg.SettingsFactory> : JDBC3 getGeneratedKeys(): disabled
+{INFO } [2012-04-13 16:33:03,192] <org.hibernate.cfg.SettingsFactory> : Connection release mode: auto
+{INFO } [2012-04-13 16:33:03,197] <org.hibernate.cfg.SettingsFactory> : Default batch fetch size: 1
+{INFO } [2012-04-13 16:33:03,198] <org.hibernate.cfg.SettingsFactory> : Generate SQL with comments: enabled
+{INFO } [2012-04-13 16:33:03,202] <org.hibernate.cfg.SettingsFactory> : Order SQL updates by primary key: disabled
+{INFO } [2012-04-13 16:33:03,207] <org.hibernate.cfg.SettingsFactory> : Order SQL inserts for batching: disabled
+{INFO } [2012-04-13 16:33:03,209] <org.hibernate.cfg.SettingsFactory> : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:33:03,219] <org.hibernate.hql.ast.ASTQueryTranslatorFactory> : Using ASTQueryTranslatorFactory
+{INFO } [2012-04-13 16:33:03,220] <org.hibernate.cfg.SettingsFactory> : Query language substitutions: {}
+{INFO } [2012-04-13 16:33:03,222] <org.hibernate.cfg.SettingsFactory> : JPA-QL strict compliance: disabled
+{INFO } [2012-04-13 16:33:03,224] <org.hibernate.cfg.SettingsFactory> : Second-level cache: enabled
+{INFO } [2012-04-13 16:33:03,226] <org.hibernate.cfg.SettingsFactory> : Query cache: disabled
+{INFO } [2012-04-13 16:33:03,240] <org.hibernate.cfg.SettingsFactory> : Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+{INFO } [2012-04-13 16:33:03,242] <org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> : Cache provider: net.sf.ehcache.hibernate.EhCacheProvider
+{INFO } [2012-04-13 16:33:03,252] <org.hibernate.cfg.SettingsFactory> : Optimize cache for minimal puts: disabled
+{INFO } [2012-04-13 16:33:03,253] <org.hibernate.cfg.SettingsFactory> : Structured second-level cache entries: disabled
+{INFO } [2012-04-13 16:33:03,270] <org.hibernate.cfg.SettingsFactory> : Statistics: disabled
+{INFO } [2012-04-13 16:33:03,271] <org.hibernate.cfg.SettingsFactory> : Deleted entity synthetic identifier rollback: disabled
+{INFO } [2012-04-13 16:33:03,276] <org.hibernate.cfg.SettingsFactory> : Default entity-mode: pojo
+{INFO } [2012-04-13 16:33:03,277] <org.hibernate.cfg.SettingsFactory> : Named query checking : enabled
+{INFO } [2012-04-13 16:33:03,584] <org.hibernate.impl.SessionFactoryImpl> : building session factory
+{INFO } [2012-04-13 16:33:04,755] <org.hibernate.impl.SessionFactoryObjectFactory> : Not binding factory to JNDI, no JNDI name configured
+{INFO } [2012-04-13 16:33:04,792] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : Running hbm2ddl schema update
+{INFO } [2012-04-13 16:33:04,793] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : fetching database metadata
+{INFO } [2012-04-13 16:33:04,825] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : updating schema
+{INFO } [2012-04-13 16:33:04,938] <org.hibernate.tool.hbm2ddl.TableMetadata> : table found: PUBLIC.APN_USER
+{INFO } [2012-04-13 16:33:04,939] <org.hibernate.tool.hbm2ddl.TableMetadata> : columns: [created_date, id, username, updated_date, email, name, password]
+{INFO } [2012-04-13 16:33:04,941] <org.hibernate.tool.hbm2ddl.TableMetadata> : foreign keys: []
+{INFO } [2012-04-13 16:33:04,943] <org.hibernate.tool.hbm2ddl.TableMetadata> : indexes: [sys_idx_sys_ct_46_49, sys_idx_47]
+{INFO } [2012-04-13 16:33:04,946] <org.hibernate.tool.hbm2ddl.SchemaUpdate> : schema update complete
+{INFO } [2012-04-13 16:33:05,089] <org.springframework.orm.hibernate3.HibernateTransactionManager> : Using DataSource [org.apache.commons.dbcp.BasicDataSource@8890da] of Hibernate SessionFactory for HibernateTransactionManager
+{DEBUG} [2012-04-13 16:33:05,432] <org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder> : LinkedHashMap is an ordered map.
+{INFO } [2012-04-13 16:33:05,613] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2012-04-13 16:33:05,883] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2012-04-13 16:33:05,903] <org.mortbay.log> : jetty-6.1.25
+{INFO } [2012-04-13 16:33:07,751] </> : Initializing Spring root WebApplicationContext
+{INFO } [2012-04-13 16:33:07,755] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization started
+{INFO } [2012-04-13 16:33:07,777] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@145c761: display name [Root WebApplicationContext]; startup date [Fri Apr 13 16:33:07 CST 2012]; root of context hierarchy
+{INFO } [2012-04-13 16:33:07,794] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+{INFO } [2012-04-13 16:33:07,910] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@145c761]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fa490e
+{INFO } [2012-04-13 16:33:07,944] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fa490e: defining beans []; root of factory hierarchy
+{INFO } [2012-04-13 16:33:07,946] <org.springframework.web.context.ContextLoader> : Root WebApplicationContext: initialization completed in 184 ms
+{INFO } [2012-04-13 16:33:08,156] </> : Initializing Spring FrameworkServlet 'dispatcher'
+{INFO } [2012-04-13 16:33:08,158] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization started
+{INFO } [2012-04-13 16:33:08,162] <org.springframework.web.context.support.XmlWebApplicationContext> : Refreshing org.springframework.web.context.support.XmlWebApplicationContext@24bfaa: display name [WebApplicationContext for namespace 'dispatcher-servlet']; startup date [Fri Apr 13 16:33:08 CST 2012]; parent: org.springframework.web.context.support.XmlWebApplicationContext@145c761
+{INFO } [2012-04-13 16:33:08,165] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+{INFO } [2012-04-13 16:33:08,244] <org.springframework.web.context.support.XmlWebApplicationContext> : Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@24bfaa]: org.springframework.beans.factory.support.DefaultListableBeanFactory@e13e7b
+{INFO } [2012-04-13 16:33:08,354] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e13e7b: defining beans [urlMapping,userapiController,notificationapiController,filenameController,userController,sessionController,notificationController,paramResolver,viewResolver,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fa490e
+{DEBUG} [2012-04-13 16:33:08,407] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.api.NotificationApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,409] <org.androidpn.server.console.api.NotificationApiController> : Found action method [public void org.androidpn.server.console.api.NotificationApiController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,450] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,451] <org.androidpn.server.console.controller.NotificationController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.NotificationController.send(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,472] <org.androidpn.server.console.controller.UserController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.UserController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,494] <org.androidpn.server.console.api.UserApiController> : Found action method [public void org.androidpn.server.console.api.UserApiController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{DEBUG} [2012-04-13 16:33:08,513] <org.androidpn.server.console.controller.SessionController> : Found action method [public org.springframework.web.servlet.ModelAndView org.androidpn.server.console.controller.SessionController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception]
+{INFO } [2012-04-13 16:33:08,652] <org.springframework.web.servlet.DispatcherServlet> : FrameworkServlet 'dispatcher': initialization completed in 491 ms
+{INFO } [2012-04-13 16:33:08,676] <org.mortbay.log> : Started SelectChannelConnector@10.62.1.226:7070
+{DEBUG} [2012-04-13 16:33:08,677] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2012-04-13 16:33:08,680] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://10.62.1.226:7070
+{INFO } [2012-04-13 16:33:08,681] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2012-04-13 16:33:08,685] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2012-04-13 16:33:33,886] <org.androidpn.server.xmpp.net.XmppIoHandler> : sessionCreated()...
+{DEBUG} [2012-04-13 16:33:33,897] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event SESSION_OPENED to session 2
+Queue : [SESSION_OPENED, ]
+
+{DEBUG} [2012-04-13 16:33:33,905] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [SESSION_OPENED, , MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:33,908] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a SESSION_OPENED event for session 2
+{DEBUG} [2012-04-13 16:33:33,911] <org.androidpn.server.xmpp.net.XmppIoHandler> : sessionOpened()...
+{DEBUG} [2012-04-13 16:33:33,915] <org.androidpn.server.xmpp.net.XmppIoHandler> : remoteAddress=/10.62.2.241:49516
+{DEBUG} [2012-04-13 16:33:33,994] <org.apache.mina.core.filterchain.IoFilterEvent> : Event SESSION_OPENED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:33,996] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:33,997] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:34,002] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:34,004] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <stream:stream to="10.62.1.226" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2012-04-13 16:33:34,019] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2012-04-13 16:33:34,027] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2012-04-13 16:33:34,029] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="d207c057" xml:lang="en" version="1.0">
+{DEBUG} [2012-04-13 16:33:34,038] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:33:34,038] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2012-04-13 16:33:34,042] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,043] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:33:34,049] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:33:34,053] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:33:34,053] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,054] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:33:34,054] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:33:34,055] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,057] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:34,059] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:34,060] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:34,064] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:34,064] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+{DEBUG} [2012-04-13 16:33:34,071] <org.androidpn.server.xmpp.net.Connection> : startTLS()...
+{DEBUG} [2012-04-13 16:33:34,074] <org.androidpn.server.xmpp.ssl.SSLConfig> : keyStoreLocation=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\conf/security/keystore
+{DEBUG} [2012-04-13 16:33:34,075] <org.androidpn.server.xmpp.ssl.SSLConfig> : trustStoreLocation=C:\Users\LuTH\Desktop\androidpn\androidpn-server-bin-jetty\conf/security/truststore
+{DEBUG} [2012-04-13 16:33:34,670] <org.androidpn.server.xmpp.net.Connection> : SENT: <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+{DEBUG} [2012-04-13 16:33:34,671] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,845] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:34,847] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:34,847] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:34,848] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:34,848] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <stream:stream to="127.0.0.1" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2012-04-13 16:33:34,849] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="d207c057" xml:lang="en" version="1.0"><stream:features><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2012-04-13 16:33:34,855] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,855] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:33:34,858] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:33:34,859] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:33:34,860] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,881] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:34,886] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:34,887] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:34,887] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:34,888] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-14" type="get"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username></query></iq>
+{DEBUG} [2012-04-13 16:33:34,889] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:33:34,890] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:33:34,911] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-14"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2012-04-13 16:33:34,922] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,922] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:33:34,924] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:33:34,925] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:33:34,926] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:33:34,932] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:34,933] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:34,934] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:34,935] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:34,936] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-15" type="set"><query xmlns="jabber:iq:auth"><username>82e4c4dffc394761b1af1230803969ed</username><digest>d7c927ba4daec01da6a5fa6c12d4376269a9fa99</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2012-04-13 16:33:34,939] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:33:34,944] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:33:35,076] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="R7RDX-15" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2012-04-13 16:33:35,078] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:35,078] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:33:35,080] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:33:35,080] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:33:35,081] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:33:35,087] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:35,089] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:35,092] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:35,094] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:35,095] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <iq id="R7RDX-16" type="get"><query xmlns="jabber:iq:roster" ></query></iq>
+{DEBUG} [2012-04-13 16:33:35,097] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2012-04-13 16:33:35,097] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2012-04-13 16:33:35,099] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:33:35,285] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:33:35,287] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:33:35,287] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:33:35,288] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageReceived()...
+{DEBUG} [2012-04-13 16:33:35,289] <org.androidpn.server.xmpp.net.XmppIoHandler> : RCVD: <presence id="R7RDX-17"></presence>
+{DEBUG} [2012-04-13 16:33:35,289] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2012-04-13 16:33:35,290] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2012-04-13 16:33:35,291] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:34:19,900] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:34:19,903] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:34:19,904] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:34:19,905] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:34:28,334] <org.androidpn.server.console.api.NotificationApiController> : apiKey=1234567890
+{DEBUG} [2012-04-13 16:34:28,336] <org.androidpn.server.xmpp.push.NotificationManager> : sendNotifcationToUser()...
+{DEBUG} [2012-04-13 16:34:38,669] <org.androidpn.server.console.api.NotificationApiController> : apiKey=1234567890
+{DEBUG} [2012-04-13 16:34:38,670] <org.androidpn.server.xmpp.push.NotificationManager> : sendNotifcationToUser()...
+{DEBUG} [2012-04-13 16:34:38,671] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="set" id="452-1" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"><notification xmlns="androidpn:iq:notification"><id>7a739de</id><apiKey>1234567890</apiKey><title>FE协同办公</title><message>GET世界，你好</message><uri></uri></notification></iq>
+{DEBUG} [2012-04-13 16:34:38,695] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:34:38,719] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:34:38,720] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:34:38,721] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:34:49,897] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:34:49,899] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:34:49,900] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:34:49,901] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:35:19,900] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:35:19,902] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:35:19,903] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:35:19,904] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:35:29,059] <org.androidpn.server.console.api.NotificationApiController> : apiKey=1234567890
+{DEBUG} [2012-04-13 16:35:29,062] <org.androidpn.server.xmpp.push.NotificationManager> : sendNotifcationToUser()...
+{DEBUG} [2012-04-13 16:35:29,063] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="set" id="113-2" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"><notification xmlns="androidpn:iq:notification"><id>2314bc55</id><apiKey>1234567890</apiKey><title>FE协同办公</title><message>GET世界，你好</message><uri></uri></notification></iq>
+{DEBUG} [2012-04-13 16:35:29,076] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:35:29,109] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:35:29,113] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:35:29,115] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:35:29,112] <org.androidpn.server.console.api.NotificationApiController> : apiKey=1234567890
+{DEBUG} [2012-04-13 16:35:29,123] <org.androidpn.server.xmpp.push.NotificationManager> : sendNotifcationToUser()...
+{DEBUG} [2012-04-13 16:35:29,134] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="set" id="74-3" to="82e4c4dffc394761b1af1230803969ed@127.0.0.1/AndroidpnClient"><notification xmlns="androidpn:iq:notification"><id>6888bafa</id><apiKey>1234567890</apiKey><title>FE协作平台</title><message>POST世界，你好</message><uri></uri></notification></iq>
+{DEBUG} [2012-04-13 16:35:29,162] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+{DEBUG} [2012-04-13 16:35:29,166] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_SENT event for session 2
+{DEBUG} [2012-04-13 16:35:29,168] <org.androidpn.server.xmpp.net.XmppIoHandler> : messageSent()...
+{DEBUG} [2012-04-13 16:35:29,169] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_SENT has been fired for session 2
+{DEBUG} [2012-04-13 16:35:49,911] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:35:49,912] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:35:49,913] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:35:49,914] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:36:19,909] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:36:19,910] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:36:19,911] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:36:19,912] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:36:49,908] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:36:49,910] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:36:49,910] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:36:49,911] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:37:19,909] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:37:19,911] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:37:19,911] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:37:19,912] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:37:49,912] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:37:49,913] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:37:49,914] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:37:49,914] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:38:19,908] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:38:19,909] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:38:19,910] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:38:19,911] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:38:49,912] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:38:49,913] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:38:49,913] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:38:49,914] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:39:19,916] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:39:19,919] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:39:19,919] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:39:19,920] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:39:49,920] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:39:49,925] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:39:49,926] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:39:49,926] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:40:19,921] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:40:19,922] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:40:19,923] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:40:19,923] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:40:49,931] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:40:49,933] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:40:49,934] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:40:49,934] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:41:19,931] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:41:19,933] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:41:19,933] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:41:19,934] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:41:49,933] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:41:49,934] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:41:49,935] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:41:49,936] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:42:19,925] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:42:19,927] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:42:19,928] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:42:19,928] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:42:49,935] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:42:49,937] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:42:49,938] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:42:49,939] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:43:19,934] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:43:19,935] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:43:19,935] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:43:19,936] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:43:49,940] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:43:49,942] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:43:49,943] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:43:49,943] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:44:19,941] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:44:19,942] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:44:19,943] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:44:19,944] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2
+{DEBUG} [2012-04-13 16:44:49,946] <org.apache.mina.filter.executor.OrderedThreadPoolExecutor> : Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+{DEBUG} [2012-04-13 16:44:49,948] <org.apache.mina.core.filterchain.IoFilterEvent> : Firing a MESSAGE_RECEIVED event for session 2
+{DEBUG} [2012-04-13 16:44:49,950] <org.apache.mina.filter.codec.ProtocolCodecFilter> : Processing a MESSAGE_RECEIVED for session 2
+{DEBUG} [2012-04-13 16:44:49,950] <org.apache.mina.core.filterchain.IoFilterEvent> : Event MESSAGE_RECEIVED has been fired for session 2

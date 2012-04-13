@@ -7,16 +7,83 @@ Push Notification Service for Android
 This is an open source project to provide push notification support for Android
 -- a xmpp based notification server and a client tool kit. 
 
-
-
 androidpn-0.5.0 版本
-14:46 2012/4/13
+
 
 文件描述：
 androidpn-client：android客户端工程源码包
 androidpn-demoapp：android客户端工程调用封装好的.jar包
-androidpn-server-bin：androidpn服务器端jetty版本
 androidpn-server-src：androidpn服务器端源码包
+androidpn-server-bin：androidpn服务器端jetty版本
 
-===============
+
 v0.5.0 Tag成功啦...
+dannytiehui@hotmail.com
+
+
+=======v0.6.0更新后16:36 2012/4/13================
+
+文件描述：
+androidpn-client：android客户端工程源码包
+androidpn-server-src：androidpn服务器端源码包
+androidpn-server-bin-jetty：androidpn服务器端jetty版本
+androidpn-server-bin-tomcat：androidpn服务器端tomcat版本，可直接绑定数据库(如Mysql)
+apnsUnit：中间件。项目中可以直接引用来调用服务器端消息推送接口
+
+
+--------------------------------------------------
+开始前请准备：
+
+androidpn-client：
+1、修改res/raw/androidpn.properties配置文件
+把xmppHost=127.0.0.1改成你自己的ip；模拟器设置为：10.0.2.2
+
+
+androidpn-server-bin-jetty：
+修改配置文件conf/config.properties
+admin.console.host=10.62.1.226为自己的ip
+
+
+androidpn-server-bin-tomcat：
+1、用到了java的spring框架
+2、修改resources/jdbc.properties配置文件
+3、查看WebRoot/WEB-INF/dispatcher-servlet.xml配置文件
+4、访问地址为；http://127.0.0.1:8080/ 端口号为tomcat所使用的端口号
+
+
+--------------------------------------------------
+新功能：
+androidpn-server
+新添加了两个接口：
+package org.androidpn.server.console.api;
+UserApiController.java 用于获取用户列表，并返回json数据；
+NotificationApiController.java 用户消息推送
+
+/user_api.do=userapiController	
+/notification_api.do=notificationapiController
+				/index.do=filenameController
+				/user.do=userController
+				/session.do=sessionController
+				/notification.do=notificationController		
+
+WebRoot/WEB-INF/dispatcher-servlet.xml文件更新
+添加了
+/user_api.do=userapiController	
+/notification_api.do=notificationapiController
+
+为防止别人恶意用网页群发消息推送，一下可隐藏		
+/index.do=filenameController
+/user.do=userController
+/session.do=sessionController
+/notification.do=notificationController	
+
+
+--------------------------------------------------
+修复的BUG列表：
+androidpn-client：
+1、重复发送消息时，被覆盖的问题。
+    用示例程序，我连续推送2条消息，无论点击哪一条，都显示最新的那条数据。（对不上号）
+    例如，我先推送标题为“A”的新闻，然后再推送标题为‘B’的新闻，这个时候，客户端收到两条推送消息，分别是A、B，无论我点击A，还是B，详情页都显示B的信息
+
+
+
