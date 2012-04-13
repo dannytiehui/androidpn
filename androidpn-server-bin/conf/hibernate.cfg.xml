@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+		<property name="hibernate.connection.url">jdbc:hsqldb:db/androidpn;shutdown=true</property>
+		<property name="hibernate.connection.username">sa</property>
+		<property name="hibernate.connection.password"></property>
+
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<!--( jta | thread | managed | custom.Class )-->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- Second-level cache  -->
+		<!-- http://ehcache.sourceforge.net/documentation/hibernate.html -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</property>
+
+		<!-- UTF-8 -->
+		<property name="hibernate.connection.useUnicode">true</property>
+		<property name="hibernate.connection.characterEncoding">utf-8</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.use_sql_comments">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<!--( validate | update | create | create-drop )-->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Mapping Files -->
+		<mapping class="org.androidpn.server.model.User" />
+
+	</session-factory>
+</hibernate-configuration>
+
