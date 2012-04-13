@@ -1,4 +1,4 @@
-ANDROIDPN-SERVER README
+﻿ANDROIDPN-SERVER README
 =======================
 http://androidpn.sourceforge.net/
 
@@ -17,3 +17,6 @@ androidpn-client：android客户端工程源码包
 androidpn-demoapp：android客户端工程调用封装好的.jar包
 androidpn-server-bin：androidpn服务器端jetty版本
 androidpn-server-src：androidpn服务器端源码包
+
+===============
+v0.5.0 Tag成功啦...
