@@ -1,0 +1,343 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.androidpn</groupId>
+		<artifactId>androidpn-server</artifactId>
+		<version>0.5.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>server</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<!--
+			<dependency> <groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId> <version>1.4</version>
+			</dependency> <dependency> <groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId> <version>3.2.1</version>
+			</dependency> <dependency> <groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId> <version>1.6</version>
+			<exclusions> <exclusion> <groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId> </exclusion>
+			</exclusions> </dependency> <dependency>
+			<groupId>commons-dbcp</groupId> <artifactId>commons-dbcp</artifactId>
+			<version>1.2.2</version> </dependency> <dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId> <version>2.0</version>
+			</dependency> <dependency> <groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId> <version>3.1</version>
+			</dependency> <dependency> <groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId> <version>1.4</version>
+			</dependency> <dependency> <groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId> <version>2.4</version>
+			</dependency> <dependency> <groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId> <version>1.1.1</version>
+			</dependency> <dependency> <groupId>log4j</groupId>
+			<artifactId>log4j</artifactId> <version>1.2.12</version>
+			</dependency> <dependency> <groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId> <version>1.5.8</version>
+			</dependency> <dependency> <groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId> <version>1.5.8</version>
+			</dependency> <dependency> <groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId> <version>1.3.04</version>
+			</dependency> <dependency> <groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId> <version>2.9.1</version>
+			</dependency> <dependency> <groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId> <version>1.6.1</version> </dependency>
+			<dependency> <groupId>xpp3</groupId> <artifactId>xpp3</artifactId>
+			<version>1.1.4c</version> </dependency> <dependency>
+			<groupId>org.apache.mina</groupId> <artifactId>mina-core</artifactId>
+			<version>2.0.0-RC1</version> </dependency> <dependency>
+			<groupId>org.apache.mina</groupId>
+			<artifactId>mina-integration-beans</artifactId>
+			<version>2.0.0-RC1</version> </dependency> <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId> <version>2.5.6</version>
+			</dependency> <dependency> <groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId> <version>2.5.6</version>
+			<scope>test</scope> </dependency> <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId> <version>3.3.1.GA</version>
+			<exclusions> <exclusion> <artifactId>spring-core</artifactId>
+			<groupId>org.springframework</groupId> </exclusion> <exclusion>
+			<artifactId>spring-aop</artifactId>
+			<groupId>org.springframework</groupId> </exclusion> </exclusions>
+			</dependency> <dependency> <groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.4.0.GA</version> </dependency> <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-tools</artifactId> <version>3.2.3.GA</version>
+			<scope>test</scope> </dependency> <dependency>
+			<groupId>javassist</groupId> <artifactId>javassist</artifactId>
+			<version>3.8.0.GA</version> </dependency> <dependency>
+			<groupId>dom4j</groupId> <artifactId>dom4j</artifactId>
+			<version>1.6.1</version> <exclusions> <exclusion>
+			<artifactId>xml-apis</artifactId> <groupId>xml-apis</groupId>
+			</exclusion> </exclusions> </dependency> <dependency>
+			<groupId>ehcache</groupId> <artifactId>ehcache</artifactId>
+			<version>1.6.1</version> </dependency> <dependency>
+			<groupId>bouncycastle</groupId> <artifactId>bcprov-jdk15</artifactId>
+			<version>140</version> </dependency> <dependency>
+			<groupId>org.igniterealtime</groupId> <artifactId>tinder</artifactId>
+			<version>1.2.1</version> </dependency> <dependency>
+			<groupId>org.cyberneko.pull</groupId>
+			<artifactId>nekopull</artifactId> <version>0.2.4</version>
+			</dependency> <dependency> <groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId> <version>1.8.0.10</version>
+			</dependency> <dependency> <groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version> </dependency> <dependency>
+			<groupId>junit</groupId> <artifactId>junit</artifactId>
+			<version>3.8.2</version> <scope>test</scope> </dependency>
+			<dependency> <groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId> <version>2.4.6</version>
+			<scope>provided</scope> </dependency> <dependency>
+			<groupId>org.mortbay.jetty</groupId> <artifactId>jetty</artifactId>
+			<version>6.1.25</version> <exclusions> <exclusion>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>servlet-api</artifactId> </exclusion> </exclusions>
+			</dependency> <dependency> <groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-util</artifactId> <version>6.1.25</version>
+			</dependency> <dependency> <groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-sslengine</artifactId> <version>6.1.25</version>
+			</dependency> <dependency> <groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId> <version>2.5</version>
+			</dependency> <dependency> <groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId> <version>2.1</version> </dependency>
+			<dependency> <groupId>jstl</groupId> <artifactId>jstl</artifactId>
+			<version>1.1.2</version> </dependency> <dependency>
+			<groupId>taglibs</groupId> <artifactId>standard</artifactId>
+			<version>1.1.2</version> </dependency> <dependency>
+			<groupId>opensymphony</groupId> <artifactId>sitemesh</artifactId>
+			<version>2.4.1</version> </dependency> <dependency>
+			<groupId>org.directwebremoting</groupId> <artifactId>dwr</artifactId>
+			<version>2.0.3</version> </dependency> <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId> <version>2.5.6</version>
+			<exclusions> <exclusion> <groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId> </exclusion> <exclusion>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId> </exclusion> <exclusion>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId> </exclusion> <exclusion>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId> </exclusion> <exclusion>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId> </exclusion>
+			</exclusions> </dependency> <dependency>
+			<groupId>org.apache.tomcat</groupId> <artifactId>jasper</artifactId>
+			<version>6.0.29</version> <exclusions> <exclusion>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>catalina</artifactId> </exclusion> <exclusion>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>servlet-api</artifactId> </exclusion> <exclusion>
+			<groupId>org.apache.tomcat</groupId> <artifactId>jsp-api</artifactId>
+			</exclusion> </exclusions> </dependency>
+		-->
+	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.4.2</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<finalName>androidpn-server-${version}</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.4.2</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<!--
+				<plugin> <groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId> <version>2.1</version>
+				<executions> <execution> <id>attach-sources</id> <goals>
+				<goal>jar</goal> </goals> </execution> </executions> </plugin>
+			-->
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<excludes>
+						<exclude>**/*.xml</exclude>
+						<exclude>**/*.properties</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>hibernate3-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<components>
+						<component>
+							<name>hbm2ddl</name>
+							<implementation>annotationconfiguration</implementation>
+						</component>
+					</components>
+					<componentProperties>
+						<drop>true</drop>
+						<create>true</create>
+						<jdk5>true</jdk5>
+						<configurationfile>/target/classes/hibernate.cfg.xml</configurationfile>
+						<outputfilename>schema-ddl.sql</outputfilename>
+						<delimiter>;</delimiter>
+						<format>true</format>
+						<skip>${maven.test.skip}</skip>
+					</componentProperties>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>process-test-resources</phase>
+						<goals>
+							<goal>hbm2ddl</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>${jdbc.groupId}</groupId>
+						<artifactId>${jdbc.artifactId}</artifactId>
+						<version>${jdbc.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>dbunit-maven-plugin</artifactId>
+				<version>1.0-beta-3</version>
+				<configuration>
+					<dataTypeFactoryName>${dbunit.dataTypeFactoryName}</dataTypeFactoryName>
+					<driver>${jdbc.driverClassName}</driver>
+					<username>${jdbc.username}</username>
+					<password>${jdbc.password}</password>
+					<url>${jdbc.url}</url>
+					<src>src/test/resources/sample-data.xml</src>
+					<type>${dbunit.operation.type}</type>
+					<schema>${dbunit.schema}</schema>
+					<skip>${maven.test.skip}</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>test-compile</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>operation</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>operation</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>${jdbc.groupId}</groupId>
+						<artifactId>${jdbc.artifactId}</artifactId>
+						<version>${jdbc.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+			</testResource>
+			<testResource>
+				<directory>src/main/webapp</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+					<include>**/*.vm</include>
+				</includes>
+			</testResource>
+		</testResources>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>mysql</id>
+			<properties>
+				<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
+				<dbunit.dataTypeFactoryName>org.dbunit.ext.mysql.MySqlDataTypeFactory</dbunit.dataTypeFactoryName>
+				<hibernate.dialect>org.hibernate.dialect.MySQLInnoDBDialect</hibernate.dialect>
+				<jdbc.groupId>mysql</jdbc.groupId>
+				<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
+				<jdbc.version>5.1.6</jdbc.version>
+				<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
+				<jdbc.url><![CDATA[jdbc:mysql://localhost/androidpn?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;sessionVariables=FOREIGN_KEY_CHECKS=0]]></jdbc.url>
+				<jdbc.username>androidpn</jdbc.username>
+				<jdbc.password>androidpn</jdbc.password>
+			</properties>
+		</profile>
+		<profile>
+			<id>hsqldb</id>
+			<properties>
+				<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
+				<dbunit.dataTypeFactoryName>org.dbunit.ext.hsqldb.HsqldbDataTypeFactory</dbunit.dataTypeFactoryName>
+				<hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
+				<jdbc.groupId>org.hsqldb</jdbc.groupId>
+				<jdbc.artifactId>hsqldb</jdbc.artifactId>
+				<jdbc.version>1.8.0.10</jdbc.version>
+				<jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
+				<jdbc.url><![CDATA[jdbc:hsqldb:db/androidpn;shutdown=true]]></jdbc.url>
+				<jdbc.username>sa</jdbc.username>
+				<jdbc.password></jdbc.password>
+			</properties>
+		</profile>
+	</profiles>
+
+	<properties>
+		<dbunit.operation.type>CLEAN_INSERT</dbunit.operation.type>
+		<dbunit.dataTypeFactoryName>org.dbunit.ext.hsqldb.HsqldbDataTypeFactory</dbunit.dataTypeFactoryName>
+		<hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
+		<jdbc.groupId>org.hsqldb</jdbc.groupId>
+		<jdbc.artifactId>hsqldb</jdbc.artifactId>
+		<jdbc.version>1.8.0.10</jdbc.version>
+		<jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
+		<jdbc.url><![CDATA[jdbc:hsqldb:${basedir}/db/androidpn;shutdown=true]]></jdbc.url>
+		<jdbc.username>sa</jdbc.username>
+		<jdbc.password></jdbc.password>
+	</properties>
+
+</project>
