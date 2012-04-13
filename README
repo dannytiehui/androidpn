@@ -59,12 +59,6 @@ package org.androidpn.server.console.api;
 UserApiController.java 用于获取用户列表，并返回json数据；
 NotificationApiController.java 用户消息推送
 
-/user_api.do=userapiController	
-/notification_api.do=notificationapiController
-				/index.do=filenameController
-				/user.do=userController
-				/session.do=sessionController
-				/notification.do=notificationController		
 
 WebRoot/WEB-INF/dispatcher-servlet.xml文件更新
 添加了
