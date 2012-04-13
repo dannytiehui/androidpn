@@ -47,7 +47,7 @@ androidpn-client：
 
 androidpn-server-bin-jetty：
 修改配置文件conf/config.properties
-admin.console.host=10.62.1.226为自己的ip
+admin.console.host=10.62.1.226为服务器的ip地址
 
 
 androidpn-server-bin-tomcat：
