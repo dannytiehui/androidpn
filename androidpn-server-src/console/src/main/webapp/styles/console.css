@@ -1,0 +1,169 @@
+body {
+	text-align: left;
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	color: #333;
+}
+
+img {
+	border: 0;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+a,a:link a:active {
+	color: #1465b7;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1465b7;
+	background-color: transparent;
+}
+
+a:hover {
+	color: #bb0000;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Tahoma, Arial;
+}
+
+h1 {
+	font-size: 22px;
+	line-height: 1.3em;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	color: #444;
+}
+
+body#error h1 {
+	color: #d66;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+div#page { /* width: 780px; */
+	margin: 0 auto;
+	padding: 0;
+}
+
+div#header {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #248;
+	text-align: left;
+	border-bottom: 1px solid #777;
+}
+
+div#branding {
+	float: left;
+	width: 70%;
+	height: 50px;
+	margin: 0;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+div#branding h1 {
+	margin: 0;
+	color: #333;
+	font-size: 22px;
+}
+
+div#branding h1 a {
+	color: #e0efff;
+}
+
+div#branding p {
+	margin: 0;
+	line-height: 1em;
+}
+
+div#content {
+	margin: 0;
+	padding: 10px;
+	overflow: auto;
+}
+
+body#error div#content {
+	margin: 0;
+}
+
+div#footer {
+	padding: 0;
+}
+
+div#copyright {
+	padding: 10px;
+	text-align: center;
+	color: #444;
+	font-size: 12px;
+}
+
+#tabmenu {
+	color: #333;
+	border-bottom: 1px solid #777;
+	margin: 10px 0px 0px 0px;
+	padding: 2px;
+	z-index: 1;
+	padding-left: 10px
+}
+
+#tabmenu li {
+	display: inline;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+#tabmenu a,#tabmenu a.current {
+	color: #333;
+	background: #aabbdd;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Verdana, Arial;
+	border: 1px solid #777;
+	padding: 4px 8px 2px 8px;
+	margin: 0;
+	text-decoration: none;
+}
+
+#tabmenu a.current {
+	background: #e0efff;
+	border-bottom: 2px solid #e0efff;
+}
+
+#tabmenu a:hover {
+	color: #fff;
+	background: #aaccee;
+}
+
+/*
+#tabmenu a:visited {
+	color: #e8e9be;
+}
+*/
+#tabmenu a.current:hover {
+	background: #e0efff;
+	color: #333;
+}
+
+#tabcontent {
+	text-align: justify;
+	background: #e0efff;
+	padding: 20px;
+	border: 1px solid #777;
+	border-top: none;
+	z-index: 2;
+}

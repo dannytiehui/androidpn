@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <table name="apn_user">
+    <column>id</column>
+    <column>created_date</column>
+    <column>email</column>
+    <column>name</column>
+    <column>password</column>
+    <column>username</column>
+    <row>
+      <value>1</value>
+      <value><![CDATA[2010-08-05 12:15:13.0]]></value>
+      <value>admin@domain.com</value>
+      <value>Admin</value>
+      <value>12345</value>
+      <value>admin</value>
+    </row>
+  </table>
+</dataset>
